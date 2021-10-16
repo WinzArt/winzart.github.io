@@ -24,9 +24,10 @@ font-family: 'Squada One', cursive;
 body {
 	background-image: url("img/dark-wood.png");
 	background-color: #393F44;
+  background-attachment: fixed;
 }
 
-#navbar {
+/*#navbar {
 	overflow: hidden;
 	position: fixed;
 	bottom: 10px;
@@ -34,7 +35,6 @@ body {
 	z-index: 1;
 	padding: 0;
 }
-
 #navbar .container {
 	justify-content: space-evenly;
 	padding: 0;
@@ -46,32 +46,33 @@ body {
 	border-width: 0px 4px 0px 4px;
 	border-color: #fa6e8d;
 }
-
 #navbar div a {
 	transition-duration: 0.5s;
 	border-radius: 20px;
 	padding: 0px;
-}
-.bi {
-	margin: 5px 0 10px 0;
-	padding: 15px;
-	border-radius: 20px;
-	background-color: #efc0be;
 }
 #navbar div a:hover {
 	transition-duration: 0.5s;
 	border-radius: 20px;
 	background-color: #fa6e8d;
 	padding: 5px
+}*/
+
+.bi {
+	padding: 15px;
+	border-radius: 27px;
+	border-style: solid;
+	border-width: 4px 4px 4px 4px;
+	border-color: #fa6e8d;
 }
 
 .jumbotron {
-	padding: 50px 0;
+	padding: 30px 0;
 	text-align: center;
 }
 
 .btn {
-	box-shadow: -5px 5px 25px black;
+	box-shadow: -5px 8px 15px black;
 	transition-duration: 0.5s;
 	color: #fa6e8d;
 	background-color: rgba(0,0,0,0.25);
@@ -79,8 +80,8 @@ body {
 	border-style: solid;
 	border-width: 0px 4px 0px 4px;
 	border-color: #fa6e8d;
-	margin-top: 150px;
-	padding: 20px 50px;
+	margin-top: 50px;
+	padding: 10px 20px;
 }
 
 .btn:hover {
@@ -98,27 +99,31 @@ body {
 	padding-top: 50px;
 }
 #date{
-	padding: 50px 0;
+	padding: 20px 0;
 	text-align: center;
 }
 
 #akad {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	padding: 20px 0 50px 0;
+	max-width: 520px;
+	margin: auto;
+	justify-content: space-evenly;
+	padding: 20px 15px 50px;
 }
 
 .card {
+	box-shadow: -5px 8px 15px black;
 	align-items: center;
 	position: static;
-	width: 250px;
-	line-height: 750px;
+	width: 200px;
+	padding: 30px 20px;
+	
 	text-align: center;
 	background-color: rgba(0,0,0,0.25);
 	color: #fff;
-	margin: 0 10px;
-	padding: 20px 0;
+	margin: 0 12px;
+
 	font-size: 3em;
 	font-weight: 500;
 	border-radius: 15px;
@@ -127,8 +132,13 @@ body {
 	border-color: #fa6e8d;
 }
 
+.card-text {
+	padding-top: 25px;
+	line-height: 35px;
+}
+
 #timer {
-	padding: 50px 0 50px 0;
+	padding-top: 50px;
 	background-color: rgba(0,0,0,0.25);
 	text-align: center;
 }
@@ -136,15 +146,17 @@ body {
 .countdown{
 	display: flex;
 	margin-top: 30px;
+	padding-bottom: 20px;
 	justify-content: center;
 }
 
 .countdown div{
+	box-shadow: -5px 8px 15px black;
 	position: static;
 	width: 120px;
 	height: 100px;
 	text-align: center;
-	background-color: rgba(0,0,0,0.25);
+	background-color: rgba(0,0,0,0.15);
 	color: #fff;
 	margin: 0px 5px;
 	border-radius: 15px;
@@ -156,8 +168,8 @@ body {
 .countdown div h5{
 	line-height: 60px;
 	text-align: center;
-	background-color: #fa6e8d;
-	color: #fff;
+	background-color:;
+	color: #fa6e8d;
 	margin: 0px 5px;
 	font-size: 3em;
 	font-weight: 500;
@@ -166,12 +178,14 @@ body {
 }
 
 #maps {
-	padding: 30px 20px;
+	padding: 20px 20px;
 	background-color: rgba(0,0,0,0.25);
 	text-align: center;
 }
 
 #maps .container {
+	margin-bottom: 30px;
+	box-shadow: -5px 8px 15px black;
 	background-color: rgba(0,0,0,0.25);
 	padding: 10px 10px;
 	max-width: 720px;
@@ -181,19 +195,33 @@ body {
 	border-color: #fa6e8d;
 }
 
-
-
 iframe {
 	border-radius: 15px;
 }
 
-#kosong {
+#penutup {
 	background-color: rgba(0,0,0,0.25);
+	text-align: center;
+}
+
+#undang {
+	padding: 50px 10px;
+	background-color: rgba(0,0,0,0.25);
+	text-align: center;
+}
+
+#undang .row {
+	margin: auto;
+	padding: 30px 0;
+	background-color: white;
+	border-radius: 15px;
+	max-width: 720px;
 }
 
 .text {
-	padding: 20px 15px;
-
+	margin: auto;
+	padding: 20px 30px;
+	max-width: 720px;
 }
 
 h1 {
@@ -233,14 +261,13 @@ h5 {
 
 h6 {
 	font-family: 'Qwigley', cursive;
-	font-weight: ;
+	line-height: 0.8;
 	font-size: 73px;
-	color: #efc0be;
-
+	color: #fa6e8d;
 }
 
 p {
-	font-family: 'Squada One', cursive;
+	font-family: 'Playfair Display', serif;
 	font-weight: 500;
 	font-size: 20px;
 	color: white;
@@ -252,6 +279,6 @@ p {
 	font-family: 'Squada One', cursive;
 	font-size: 22px;
 	color: white;
-	letter-spacing: 0.5px;
+	letter-spacing: 0.2px;
 }
 
